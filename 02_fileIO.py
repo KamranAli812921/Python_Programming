@@ -1,4 +1,5 @@
 file = open('02_fileIO.txt','r')
 for line in file:
-    print(line,end="")
+    if 'y' in line:
+        print(line,end="")
 file.close()
