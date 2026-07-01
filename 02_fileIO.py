@@ -27,3 +27,10 @@ with open(r'02_file\file.txt','r') as file:
     lines=file.readlines()
 for line in lines[::-1]:
     print(line,end="")
+
+# Writing in the file
+bucket=['Apple','Grapes','banana']
+with open(r'02_file\write.txt','w') as write_file:
+    for fruite in bucket:
+        print(fruite,file=write_file)
+
