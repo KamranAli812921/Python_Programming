@@ -1,6 +1,6 @@
 class check():
     print("Object created")
-    def greet():
+    def greet(self):
         print("Hello Kamran")
 
 kamran=check()
