@@ -6,13 +6,15 @@ class bank:
         print(f"The account was created for {self.name}")
     def deposit(self,amount):
         self.balance+=amount
+        self.showBalance()
     def withdraw(self,amount):
         self.balance-=amount
+        self.showBalance()
     def showBalance(self):
         print(f"The current Balance is {self.balance}")
 kamran=bank('Kamran Ali',2000)
 kamran.deposit(2000)
-kamran.showBalance()
+# kamran.showBalance()
 kamran.withdraw(200)
-kamran.showBalance()
+# kamran.showBalance()
         
