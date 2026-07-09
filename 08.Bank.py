@@ -8,13 +8,16 @@ class bank:
         self.balance+=amount
         self.showBalance()
     def withdraw(self,amount):
-        self.balance-=amount
-        self.showBalance()
+        if amount<=self.balance and amount>0:
+            self.balance-=amount
+            self.showBalance()
+        else:
+            print("Insuficient Balance")
     def showBalance(self):
         print(f"The current Balance is {self.balance}")
 kamran=bank('Kamran Ali',2000)
 kamran.deposit(2000)
 # kamran.showBalance()
-kamran.withdraw(200)
+kamran.withdraw(20000)
 # kamran.showBalance()
         
