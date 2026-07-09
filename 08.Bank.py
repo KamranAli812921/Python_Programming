@@ -8,6 +8,11 @@ class bank:
         self.balance+=amount
     def withdraw(self,amount):
         self.balance-=amount
-    
-
+    def showBalance(self):
+        print(f"The current Balance is {self.balance}")
+kamran=bank('Kamran Ali',2000)
+kamran.deposit(2000)
+kamran.showBalance()
+kamran.withdraw(200)
+kamran.showBalance()
         
